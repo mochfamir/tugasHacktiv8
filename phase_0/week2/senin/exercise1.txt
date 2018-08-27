@@ -1,0 +1,71 @@
+// 1.   Newton Second Law (Pseudocode)
+
+        STORE 'm' with 600
+        STORE 'a' with 2
+        STORE 'F' with null
+        CALCULATE 'm' times 'a'
+        SET 'F' with result of CALCULATE
+        DISPLAY 'F'
+
+    2.  Tahun Kabisat
+
+        A.  Algoritma
+        Masukan nilai 'tahun'
+        Jika 'tahun' habis dibagi dengan 4, tidak habis dibagi 100 dan 'tahun' habis dibagi dengan 4, habis dibagi 100, habis dibagi dengan 400
+            Maka tampilkan 'Tahun Kabisat'
+        Jika tidak 
+            Maka tampilkan 'Bukan Tahun Kabisat'
+
+        B.  Pseudocode
+        STORE 'tahun' with anyvalue
+        IF ('tahun' mod equal 0 AND 'tahun' mod 100 notequal 0) AND ('tahun' mod 4 equal 0 AND 'tahun' mod 100 equal 0 AND 'tahun' mod 400 equal 0)
+            DISPLAY 'Tahun Kabisat'
+        Else 
+            DISPLAY 'Bukan Tahun Kabisat'
+
+    3.  Laundry Day
+
+        A.  Algoritma
+        'pakaian' di mesin cuci jumlahnya 0
+        Mesin cuci mati
+        Ketika 'pakaian' di mesin cuci kurang dari 20
+        Tampilkan jumlah 'pakaian' di mesin cuci
+        Masukan 1 pakaian ke mesin cuci
+        Jika sudah, nyalakan mesin cuci
+
+        B.  Pseudocode
+        STORE 'pakaian' with 0
+        STORE 'mesin cuci' with OFF
+        WHILE 'pakaian' < 20
+            DISPLAY 'pakaian'
+            ADD 'pakaian' by 1
+        ENDWHILE
+        DO 'mesin cuci' ON
+
+    4.  Periksa Kuku
+
+        A.  Algoritma
+        Sementara 'murid' yang sudah di cek jumlahnya 0
+        Kuku murid ada yang panjang dan ada yang pendek
+        Ketika guru memeriksa 'murid' masih kurang dari 40
+            Periksa 1 'murid'
+            Jika kukunya panjang
+                Maka guru menghukum murid tersebut
+            Jika jujunya pendek
+                Maka guru memuji siswa tersebut
+        Jika sudah, berhenti memeriksa
+
+        B.  Pseudocode
+        STORE 'murid' with 0
+        STORE 'kuku panjang' with any value
+        While 'murid' < 40
+            ADD 'murid' by 1
+            IF 'kuku panjang' equal true
+                DISPLAY "Guru Menghukum Murid"
+            Else 
+                DISPLAY "Guru Memuji Murid"
+        ENDWHILE
+        
+                
+        
+        
