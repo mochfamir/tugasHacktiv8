@@ -1,7 +1,10 @@
 var star = ''
-var rows = 10;
+var star2 = ''
+var rows = 5;
 var i = 1;
 var j = 1;
+var k = 1;
+var l = 1;
 
 
 // //1 
@@ -11,17 +14,17 @@ for (var i = 1; i <= rows; i++){
 
 // 2
 while (j <= rows) {
-    while (i <= rows) {
+    while (k <= rows) {
         star = star + '*'
-        i++
+        k++
     }
     console.log(star);
     j++;
 }
 
 //3
-for (var i = 1; i <= rows; i++) {
-    star = star + '*'
-    console.log(star)
+for (var l = 1; l <= rows; l++) {
+    star2 = star2 + '*'
+    console.log(star2)
 }
 
