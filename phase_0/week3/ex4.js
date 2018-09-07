@@ -53,7 +53,7 @@ function dataHandling2(arr) {
 
 
     var tes = input[3].split("/")
-    console.log(input[3])
+    //console.log(input[3])
     console.log(tes.join("-"))
 
     // mengubah nilai array[1] menjadi string, lalu ambil dari indeks 0 sampai 14
