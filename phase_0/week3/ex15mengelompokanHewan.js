@@ -1,36 +1,29 @@
 function groupAnimals(animals) {
-    var banding = animals[0][0]
     var tampung = []
     var outputAnimals = []
 
     // sort array sesuai abjad
     animals.sort()
-    console.log(animals)
+
+    var banding = animals[0][0]
 
     for (var i = 0; i < animals.length; i++) {
-        console.log(i)
         //cek banding dengan huruf depan, kalau sama tampung dulu
         if (banding == animals[i][0]) {
-            console.log('masuk if>>>>>', banding, '=====', animals[i])
             tampung.push(animals[i])
         }
         // kalau banding tidak sama, push tampung ke output
         else {
             outputAnimals.push(tampung)
             banding = animals[i][0]
-            console.log('masuk else>>>', banding)
             tampung = []
-            console.log('//////////////',i)
             tampung.push(animals[i])
-            console.log(tampung)
         }
         // kondisi untuk push tampung ke output, jika looping mau beres
-        if (i == animals.length -1) {
-            console.log('masuk if bawah')
+        if (i == animals.length - 1) {
             outputAnimals.push(tampung)
         }
     }
-    //console.log(tampung)
     return outputAnimals
 
 }
