@@ -15,7 +15,7 @@ function dataHandling() {
         console.log('Hobi : ' + input[i][3])
         console.log(' ')
     }
-    return 
+    return input
 }
 
 dataHandling()
