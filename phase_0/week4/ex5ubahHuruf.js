@@ -1,6 +1,6 @@
 function ubahHuruf(kata) {
-    huruf = 'abcdefghijklmnopqrstuvwxyza'
-    output = ""
+    var huruf = 'abcdefghijklmnopqrstuvwxyza'
+    var output = ""
 
     // bandingkan huruf dengan kata
     for (var i = 0; i < kata.length; i++) {
