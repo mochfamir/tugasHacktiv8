@@ -1,5 +1,4 @@
 function tukarBesarKecil(kalimat) {
-    var output = ""
     var tampung = []
     var abjad = "abcdefghijklmnopqrstuvwxyz"
     var ABJAD = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
