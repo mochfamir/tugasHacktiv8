@@ -12,7 +12,7 @@ function hitungHuruf(kata) {
     for (var i = 0; i < kataArr.length; i++) {
         var count = 0
         for (var j = 0; j < kataArr[i].length - 1; j++) {
-            for (var k = j+1; k < kataArr[i].length; k++) {
+            for (var k = j + 1; k < kataArr[i].length; k++) {
                 if (kataArr[i][j] === kataArr[i][k]) {      //jika sama maka hitung
                     count++
                     if (nilai.modus <= count) {             //jika count lebih besar
@@ -23,13 +23,14 @@ function hitungHuruf(kata) {
                 }
             }
         }
-
+        
         nilai.huruf.push(arr)       // push ke array nilai
         arr = []
     }
     //console.log(nilai.huruf, '   ', nilai.modus)
     nilai.huruf.sort()              // sort, ambil indeks yang paling belakang/terbanyak
-    return nilai.huruf[nilai.huruf.length-1][0]     
+    console.log(nilai)
+    return nilai.huruf[nilai.huruf.length - 1][0]
 
 }
 

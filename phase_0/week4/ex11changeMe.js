@@ -2,9 +2,6 @@ function changeMe(check) {
     var obj = {}
     if (check == 0) {
         console.log(`""`)
-
-
-
     }
     else {
         for (var i = 0; i < check.length; i++) {
