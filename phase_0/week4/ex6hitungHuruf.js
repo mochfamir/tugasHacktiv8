@@ -1,37 +1,28 @@
 function hitungHuruf(kata) {
-    var nilai = {
-        modus: 0,
-        huruf: []
-    }
-
-    var count = 0
-    var arr = []
     var kataArr = kata.split(' ')
-    //console.log(kataArr)
-    // buat loop untuk cari kata yang sama
+    var modusHufuf = []
+    var output = []
     for (var i = 0; i < kataArr.length; i++) {
-        var count = 0
-        for (var j = 0; j < kataArr[i].length - 1; j++) {
-            for (var k = j + 1; k < kataArr[i].length; k++) {
-                if (kataArr[i][j] === kataArr[i][k]) {      //jika sama maka hitung
-                    count++
-                    if (nilai.modus <= count) {             //jika count lebih besar
-                        nilai.modus = count                 // maka isi dengan count
-                        //arr.push(kataArr[i][j])
-                        arr.push(kataArr[i])                // tampung dulu niai yang sama
+        kataHuruf = kataArr[i].split('')
+        for (var j = 0; j < kataHuruf.length; j++) {
+            var cek = kataHuruf[j]
+            for (var k = 0; k < kataHuruf.length; k++) {
+                if (cek === kataHuruf[k] && modusHufuf[j] !== 0 && j !== k) {
+                    if (kataHuruf[k] !== '' || kataHuruf[j] !== '') {
+                        modusHufuf.push(kataArr[i])
+                        modusHufuf.push(kataArr[i])
+                        kataHuruf[k] = ''
+                        kataHuruf[j] = ''
                     }
                 }
             }
         }
-        
-        nilai.huruf.push(arr)       // push ke array nilai
-        arr = []
+        if (modusHufuf.length > output.length) {
+            output = modusHufuf
+        }
+        modusHufuf = []
     }
-    //console.log(nilai.huruf, '   ', nilai.modus)
-    nilai.huruf.sort()              // sort, ambil indeks yang paling belakang/terbanyak
-    console.log(nilai)
-    return nilai.huruf[nilai.huruf.length - 1][0]
-
+    return output[0]
 }
 
 // TEST CASES
